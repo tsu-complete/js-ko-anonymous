@@ -81,7 +81,7 @@
          * make an anonymous template and store for later use
          * @memberof ko.anonymous
          * @method register
-         * @param {String} name what to alias template as
+         * @param {String}             name what to alias template as
          * @param {Element|String} template what to make anonymous and store
          * @return {Element} anonymous template
          * @example
@@ -109,21 +109,29 @@
          * initialize anonymous binding on an element
          * @method init
          * @memberof ko.bindingHandlers.anonymous
-         * @param {Element} element dom element being bound
-         * @param {Function} valueAccessor returns options
-         * @param {Function} allBindingsAccessor returns bindings for element
-         * @param {Object} viewModel current data for  element
-         * @param {Object} bindingContext current context for element
-         * @param {Object|Element|String} options
-         *  expected return value of valueAccessor
-         * @param {Element|String} options.template anonymous template
-         * @param {Object} [options.with]
-         *  data to render with, defaults to the current context
-         * @param {String} [options.as] what to name this new context
-         * @param {Function|Boolean} [options.defer]
-         *   call with render function, call when ready
-         *   should rendering be deferred
-         * @param {Function} [options.after] call when template is rendered
+         * @param {Element}                 element
+         *          dom element being bound
+         * @param {Function}                valueAccessor
+         *          returns options
+         * @param {Function}                allBindingsAccessor
+         *          returns bindings for element
+         * @param {Object}                  viewModel
+         *          current data for  element
+         * @param {Object}                  bindingContext
+         *          current context for element
+         * @param {Object|Element|String}   options
+         *          expected return value of valueAccessor
+         * @param {Element|String}          options.template
+         *          anonymous template
+         * @param {Object}                  [options.with]
+         *          data to render with, defaults to the current context
+         * @param {String}                  [options.as]
+         *          what to name this new context
+         * @param {Function|Boolean}        [options.defer]
+         *          call with render function, call when ready
+         *          ;should rendering be deferred
+         * @param {Function}                [options.after]
+         *          call when template is rendered
          * @return {Object} control object for knockout
          * @example
          * // NOTE: used only by knockout, invoked as
