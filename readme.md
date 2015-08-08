@@ -1,4 +1,6 @@
 
+[![NPM](https://nodei.co/npm/ko-anonymous.png?downloads=true)](https://nodei.co/npm/ko-anonymous/)
+
 js-ko-anonymous [![LICENSE](https://img.shields.io/github/license/tsu-complete/js-ko-anonymous.svg)](https://github.com/tsu-complete/js-ko-anonymous/blob/master/LICENSE)
 ===
 
