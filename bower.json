@@ -1,0 +1,29 @@
+{
+  "name": "js-ko-anonymous",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tsu-complete/js-ko-anonymous",
+  "authors": [
+    "tsukumo"
+  ],
+  "description": "anonymous template binding for knockout",
+  "main": "index.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "anonymous",
+    "template",
+    "binding",
+    "knockout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!index.js"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0"
+  }
+}
