@@ -32,7 +32,7 @@
      * @member registry
      * @private
      */
-    registry = {  };
+    registry = { };
 
     ko.anonymous = {
         /**
@@ -90,6 +90,34 @@
          */
     ,   register: function ( name, template ) {
             registry[name] = ko.anonymous.make(template);
+        }
+        /**
+         * determine if template is registered at the given name
+         * @memberof ko.anonymous
+         * @method registered
+         * @param {String} name what to look for
+         * @return {Boolean} if template is registered under this name
+         * @example
+         * ko.anonymous.register("hello", "...");
+         * ko.anonymous.registered("hello"); // true
+         * ko.anonymous.registered("world"); // false
+         */
+    ,   registered: function ( name ) {
+            return registry.hasOwnProperty(name);
+        }
+        /**
+         * search for template under the given name
+         * @memberof ko.anonymous
+         * @method lookup
+         * @param {String} name what to look for
+         * @return {Element} anonymous template at name or undefined
+         * @example
+         * ko.anonymous.register("hello", "...");
+         * ko.anonymous.lookup("hello"); // "..."
+         * ko.anonymous.lookup("world"); // undefined
+         */
+    ,   lookup: function ( name ) {
+            return registry[name];
         }
     };
 
